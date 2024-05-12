@@ -1,0 +1,62 @@
+@import "./variables.scss";
+
+@import "./mixins.scss";
+
+.text {
+  @include base-text-styles(0.2);
+  color: green;
+}
+.text2 {
+  @include base-text-styles(0.3, rgb(255, 234, 0), border, 0.2rem solid black);
+  color: rgb(1, 0, 0);
+}
+.text3 {
+  @include base-text-styles(0.4);
+  color: rgb(22, 7, 225);
+}
+.text4 {
+  @include base-text-styles(0.5);
+  color: rgb(255, 174, 0);
+}
+.text5 {
+  @include base-text-styles(1);
+  color: rgb(8, 223, 246);
+}
+
+div {
+  h1 {
+    @include base-text-styles(0.6);
+    color: rgb(255, 0, 0);
+    span {
+      font-size: 3rem;
+    }
+  }
+  h2 {
+    @include base-text-styles(0.7);
+    color: rgb(4, 5, 4);
+  }
+}
+
+section {
+  h1 {
+    @include base-text-styles(0.8);
+    color: rgb(255, 0, 0);
+    &:hover {
+      background-color: rgb(255, 234, 0);
+    }
+  }
+}
+
+.div-container {
+  border: 0.1rem solid black;
+  border-radius: 1rem;
+  box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+.section-container {
+  @extend .div-container;
+  margin-top: 10px;
+  background-color: bisque;
+  text-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.1);
+}
