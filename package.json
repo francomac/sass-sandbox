@@ -1,0 +1,24 @@
+{
+  "name": "sass-sandbox",
+  "version": "1.0.0",
+  "description": "a sass sandbox",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/francomac/sass-sandbox.git"
+  },
+  "keywords": [
+    "sass",
+    "scss",
+    "css"
+  ],
+  "author": "francomac",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/francomac/sass-sandbox/issues"
+  },
+  "homepage": "https://github.com/francomac/sass-sandbox#readme"
+}
